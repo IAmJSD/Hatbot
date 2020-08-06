@@ -287,6 +287,7 @@ func main() {
 	router.SetCommand(setHat)
 	router.SetCommand(rmHat)
 	router.SetCommand(toggleChannel)
+	router.SetCommand(invite)
 
 	// Initialises the client.
 	logrus.SetLevel(logrus.DebugLevel)

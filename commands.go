@@ -113,3 +113,12 @@ var help = &gommand.Command{
 		return nil
 	},
 }
+
+var invite = &gommand.Command{
+	Name:        "invite",
+	Description: "Returns a invite for the bot.",
+	Function: func(ctx *gommand.Context) error {
+		_, _ = ctx.Reply("You can invite the bot with this URL: https://discord.com/oauth2/authorize?client_id="+ctx.BotUser.ID.String()+"&scope=bot&permissions=52224")
+		return nil
+	},
+}
